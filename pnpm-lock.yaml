@@ -21,8 +21,8 @@ importers:
         specifier: ^11.1.1
         version: 11.1.1
       '@fastify/multipart':
-        specifier: ^8.1.0
-        version: 8.1.0
+        specifier: ^8.3.1
+        version: 8.3.1
       '@godaddy/terminus':
         specifier: ^4.12.1
         version: 4.12.1
@@ -96,8 +96,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3
       nodemailer:
-        specifier: 6.9.14
-        version: 6.9.14
+        specifier: 6.9.15
+        version: 6.9.15
       pg-mem:
         specifier: ^2.8.1
         version: 2.8.1(@mikro-orm/core@6.1.9)(@mikro-orm/postgresql@6.1.9(@mikro-orm/core@6.1.9))(knex@3.1.0(pg@8.11.3))(pg-promise@11.5.4)
@@ -529,6 +529,9 @@ packages:
     resolution: {integrity: sha512-7PQA7EH43S0CxcOa9OeAnaeA0oQ+e/DHNPZwSQM9CQHW76jle5+OvLdibRp/Aafs9KXbLhxyjOTkRjWUbQEd3Q==}
     engines: {node: '>=14'}
 
+  '@fastify/busboy@3.1.1':
+    resolution: {integrity: sha512-5DGmA8FTdB2XbDeEwc/5ZXBl6UbBAyBOOLlPuBnZ/N1SwdH9Ii+cOX3tBROlDgcTXxjOYnLMVoKk9+FXAw0CJw==}
+
   '@fastify/compress@7.0.0':
     resolution: {integrity: sha512-jo/NaBVHP1OXIf8Kmr3bZyYQB0gAIgcy5c8rRKTPjhklHO7lRs/6ZFckUVT0NtbKSvrTuIcmSkxYpjyv3FNHXA==}
 
@@ -538,8 +541,14 @@ packages:
   '@fastify/deepmerge@1.3.0':
     resolution: {integrity: sha512-J8TOSBq3SoZbDhM9+R/u77hP93gz/rajSA+K2kGyijPpORPWUXHUpTaleoj+92As0S9uPRP7Oi8IqMf0u+ro6A==}
 
+  '@fastify/deepmerge@2.0.2':
+    resolution: {integrity: sha512-3wuLdX5iiiYeZWP6bQrjqhrcvBIf0NHbQH1Ur1WbHvoiuTYUEItgygea3zs8aHpiitn0lOB8gX20u1qO+FDm7Q==}
+
   '@fastify/error@3.4.1':
     resolution: {integrity: sha512-wWSvph+29GR783IhmvdwWnN4bUxTD01Vm5Xad4i7i1VuAOItLvbPAb69sb0IQ2N57yprvhNIwAP5B6xfKTmjmQ==}
+
+  '@fastify/error@4.0.0':
+    resolution: {integrity: sha512-OO/SA8As24JtT1usTUTKgGH7uLvhfwZPwlptRi2Dp5P4KKmJI3gvsZ8MIHnNwDs4sLf/aai5LzTyl66xr7qMxA==}
 
   '@fastify/fast-json-stringify-compiler@4.3.0':
     resolution: {integrity: sha512-aZAXGYo6m22Fk1zZzEUKBvut/CIIQe/BapEORnxiD5Qr0kPHqqI69NtEMCme74h+at72sPhbkb4ZrLd1W3KRLA==}
@@ -547,8 +556,8 @@ packages:
   '@fastify/helmet@11.1.1':
     resolution: {integrity: sha512-pjJxjk6SLEimITWadtYIXt6wBMfFC1I6OQyH/jYVCqSAn36sgAIFjeNiibHtifjCd+e25442pObis3Rjtame6A==}
 
-  '@fastify/multipart@8.1.0':
-    resolution: {integrity: sha512-sRX9X4ZhAqRbe2kDvXY2NK7i6Wf1Rm2g/CjpGYYM7+Np8E6uWQXcj761j08qPfPO8PJXM+vJ7yrKbK1GPB+OeQ==}
+  '@fastify/multipart@8.3.1':
+    resolution: {integrity: sha512-pncbnG28S6MIskFSVRtzTKE9dK+GrKAJl0NbaQ/CG8ded80okWFsYKzSlP9haaLNQhNRDOoHqmGQNvgbiPVpWQ==}
 
   '@godaddy/terminus@4.12.1':
     resolution: {integrity: sha512-Tm+wVu1/V37uZXcT7xOhzdpFoovQReErff8x3y82k6YyWa1gzxWBjTyrx4G2enjEqoXPnUUmJ3MOmwH+TiP6Sw==}
@@ -1905,6 +1914,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   esm@3.2.25:
@@ -3276,8 +3286,8 @@ packages:
     resolution: {integrity: sha512-58APXoMXpmmU+oVBJFajhTCoD8d/OGtngnVAWzIo2A8yn0IXwBzvIVIsTzoie/SrA37u+1hnpNz2HMWx/VIqlw==}
     engines: {node: '>=12'}
 
-  nodemailer@6.9.14:
-    resolution: {integrity: sha512-Dobp/ebDKBvz91sbtRKhcznLThrKxKt97GI2FAlAyy+fk19j73Uz3sBXolVtmcXjaorivqsbbbjDY+Jkt4/bQA==}
+  nodemailer@6.9.15:
+    resolution: {integrity: sha512-AHf04ySLC6CIfuRtRiEYtGEXgRfa6INgWGluDhnxTZhHSKvrBu7lc1VVchQ0d8nPc4cFaZoPq8vkyNoZr0TpGQ==}
     engines: {node: '>=6.0.0'}
 
   nodemon@3.1.0:
@@ -5044,6 +5054,8 @@ snapshots:
     dependencies:
       text-decoding: 1.0.0
 
+  '@fastify/busboy@3.1.1': {}
+
   '@fastify/compress@7.0.0':
     dependencies:
       '@fastify/accept-negotiator': 1.1.0
@@ -5062,7 +5074,11 @@ snapshots:
 
   '@fastify/deepmerge@1.3.0': {}
 
+  '@fastify/deepmerge@2.0.2': {}
+
   '@fastify/error@3.4.1': {}
+
+  '@fastify/error@4.0.0': {}
 
   '@fastify/fast-json-stringify-compiler@4.3.0':
     dependencies:
@@ -5073,11 +5089,11 @@ snapshots:
       fastify-plugin: 4.5.1
       helmet: 7.1.0
 
-  '@fastify/multipart@8.1.0':
+  '@fastify/multipart@8.3.1':
     dependencies:
-      '@fastify/busboy': 1.2.1
-      '@fastify/deepmerge': 1.3.0
-      '@fastify/error': 3.4.1
+      '@fastify/busboy': 3.1.1
+      '@fastify/deepmerge': 2.0.2
+      '@fastify/error': 4.0.0
       fastify-plugin: 4.5.1
       secure-json-parse: 2.7.0
       stream-wormhole: 1.1.0
@@ -8388,7 +8404,7 @@ snapshots:
     dependencies:
       '@babel/parser': 7.23.0
 
-  nodemailer@6.9.14: {}
+  nodemailer@6.9.15: {}
 
   nodemon@3.1.0:
     dependencies:
