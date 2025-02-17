@@ -42,7 +42,7 @@
     "@mikro-orm/postgresql": "^6.1.9",
     "@supabase/supabase-js": "^2.39.7",
     "amqplib": "^0.10.3",
-    "axios": "^1.6.7",
+    "axios": "^1.7.4",
     "bcrypt": "^5.1.1",
     "commander": "^10.0.1",
     "cwebp": "^3.0.0",
