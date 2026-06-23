@@ -40,7 +40,7 @@
     "@godaddy/terminus": "^4.12.1",
     "@mikro-orm/core": "^6.1.9",
     "@mikro-orm/postgresql": "^6.1.9",
-    "@supabase/supabase-js": "^2.39.7",
+    "@supabase/supabase-js": "^2.57.4",
     "amqplib": "^0.10.3",
     "axios": "^1.7.4",
     "bcrypt": "^5.1.1",
