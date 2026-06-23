@@ -39,8 +39,8 @@ importers:
         specifier: ^0.10.3
         version: 0.10.3
       axios:
-        specifier: ^1.7.4
-        version: 1.7.4
+        specifier: ^1.13.5
+        version: 1.13.5
       bcrypt:
         specifier: ^5.1.1
         version: 5.1.1
@@ -1211,8 +1211,8 @@ packages:
   avvio@8.3.0:
     resolution: {integrity: sha512-VBVH0jubFr9LdFASy/vNtm5giTrnbVquWBhT0fyizuNK2rQ7e7ONU2plZQWUNqtE1EmxFEb+kbSkFRkstiaS9Q==}
 
-  axios@1.7.4:
-    resolution: {integrity: sha512-DukmaFRnY6AzAALSH4J2M3k6PkaC+MfaAGdEERRWcC9q3/TWQwLpHR8ZRLKTdQ3aBDL64EdluRDjJqKw+BPZEw==}
+  axios@1.13.5:
+    resolution: {integrity: sha512-cz4ur7Vb0xS4/KUN0tPWe44eqxrIu31me+fbang3ijiNscE129POzipJJA6zniq2C/Z6sJCjMimjS8Lc/GAs8Q==}
 
   b4a@1.6.4:
     resolution: {integrity: sha512-fpWrvyVHEKyeEvbKZTVOeZF3VSKKWtJxFIxX/jaVPf+cLbGUSitjb49pHLqPV2BUNNZ0LcoeEGfE/YCpyDYHIw==}
@@ -2151,6 +2151,15 @@ packages:
     resolution: {integrity: sha512-PIaqOGvVH5P+R92Ywy5PumsNEHvondVQh42SGOmkA9A0ZTFbfguzZpjZ/Gy3WVRUqT9Ia8k5tWlJeiZQzRHA7g==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
+  follow-redirects@1.15.11:
+    resolution: {integrity: sha512-deG2P0JfjrTxl50XGCDyfI97ZGVCxIpfKYmfyrQ54n5FO/0gfIES8C/Psl6kWVDolizcaaxZJnTS0QSMxvnsBQ==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+
   follow-redirects@1.15.9:
     resolution: {integrity: sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==}
     engines: {node: '>=4.0'}
@@ -2165,6 +2174,10 @@ packages:
 
   form-data@4.0.2:
     resolution: {integrity: sha512-hGfm/slu0ZabnNt4oaRZ6uREyfCj6P4fT/n6A1rGV+Z0VdGXjfOhVUpkn6qVQONHGIFwmveGXyDs75+nr6FM8w==}
+    engines: {node: '>= 6'}
+
+  form-data@4.0.5:
+    resolution: {integrity: sha512-8RipRLol37bNs2bhoV67fiTEvdTrbMUYcFTiy3+wuuOnUog2QBHCZWXDRijWQfAkhBj2Uf5UnVaiWwA5vdd82w==}
     engines: {node: '>= 6'}
 
   formidable@2.1.2:
@@ -6140,10 +6153,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  axios@1.7.4:
+  axios@1.13.5:
     dependencies:
-      follow-redirects: 1.15.9(debug@4.3.4)
-      form-data: 4.0.2
+      follow-redirects: 1.15.11
+      form-data: 4.0.5
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
@@ -7201,7 +7214,7 @@ snapshots:
       is-relative-path: 1.0.2
       module-definition: 3.4.0
       module-lookup-amd: 7.0.1
-      resolve: 1.22.1
+      resolve: 1.22.8
       resolve-dependency-path: 2.0.0
       sass-lookup: 3.0.0
       stylus-lookup: 3.0.2
@@ -7255,6 +7268,8 @@ snapshots:
 
   fmix@1.0.0: {}
 
+  follow-redirects@1.15.11: {}
+
   follow-redirects@1.15.9(debug@4.3.4):
     optionalDependencies:
       debug: 4.3.4(supports-color@5.5.0)
@@ -7268,6 +7283,14 @@ snapshots:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       es-set-tostringtag: 2.1.0
+      mime-types: 2.1.35
+
+  form-data@4.0.5:
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      es-set-tostringtag: 2.1.0
+      hasown: 2.0.2
       mime-types: 2.1.35
 
   formidable@2.1.2:
@@ -7615,7 +7638,7 @@ snapshots:
   internal-slot@1.0.6:
     dependencies:
       get-intrinsic: 1.2.2
-      hasown: 2.0.0
+      hasown: 2.0.2
       side-channel: 1.0.4
 
   interpret@1.4.0: {}
