@@ -74,7 +74,7 @@
     "tslib": "^2.6.2",
     "tsyringe": "^4.8.0",
     "web-push": "^3.6.7",
-    "zod": "^3.22.4"
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.0",
