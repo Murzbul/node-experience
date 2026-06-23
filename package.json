@@ -39,7 +39,7 @@
     "@fastify/multipart": "^8.3.1",
     "@godaddy/terminus": "^4.12.1",
     "@mikro-orm/core": "^6.1.9",
-    "@mikro-orm/postgresql": "^6.1.9",
+    "@mikro-orm/postgresql": "^6.6.2",
     "@supabase/supabase-js": "^2.39.7",
     "amqplib": "^0.10.3",
     "axios": "^1.7.4",
