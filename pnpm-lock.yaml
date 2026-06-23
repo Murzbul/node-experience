@@ -84,8 +84,8 @@ importers:
         specifier: ^6.3.0
         version: 6.3.0(socks@2.7.1)
       mongoose:
-        specifier: ^8.9.5
-        version: 8.9.5(socks@2.7.1)
+        specifier: ^8.20.4
+        version: 8.20.4(socks@2.7.1)
       multer:
         specifier: ^2.0.0-rc.4
         version: 2.0.0-rc.4
@@ -703,6 +703,9 @@ packages:
   '@mongodb-js/saslprep@1.2.0':
     resolution: {integrity: sha512-+ywrb0AqkfaYuhHs6LxKWgqbh3I72EpEgESCw37o+9qPx9WTCkgDm2B+eMrwehGtHBWHFU4GXvnSCNiFhhausg==}
 
+  '@mongodb-js/saslprep@1.4.4':
+    resolution: {integrity: sha512-p7X/ytJDIdwUfFL/CLOhKgdfJe1Fa8uw9seJYvdOmnP9JBWGWHW69HkOixXS6Wy9yvGf1MbhcS6lVmrhy4jm2g==}
+
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -1294,8 +1297,8 @@ packages:
     resolution: {integrity: sha512-ix0EwukN2EpC0SRWIj/7B5+A6uQMQy6KMREI9qQqvgpkV2frH63T0UDVd1SYedL6dNCmDBYB3QtXi4ISk9YT+g==}
     engines: {node: '>=14.20.1'}
 
-  bson@6.10.2:
-    resolution: {integrity: sha512-5afhLTjqDSA3akH56E+/2J6kTDuSIlBxyXPdQslj9hcIgOUE378xdOfZvC/9q3LifJNI6KR/juZ+d0NRNYBwXg==}
+  bson@6.10.4:
+    resolution: {integrity: sha512-WIsKqkSC0ABoBJuT1LEX+2HEvNmNKKgnTAyd0fL8qzK4SH2i9NXg+t08YtdZp/V9IZ33cxe3iV4yM0qg8lMQng==}
     engines: {node: '>=16.20.1'}
     deprecated: a critical bug affecting only useBigInt64=true deserialization usage is fixed in bson@6.10.3
 
@@ -3277,8 +3280,8 @@ packages:
       snappy:
         optional: true
 
-  mongodb@6.12.0:
-    resolution: {integrity: sha512-RM7AHlvYfS7jv7+BXund/kR64DryVI+cHbVAy9P61fnb1RcWZqOW1/Wj2YhqMCx+MuYhqTRGv7AwHBzmsCKBfA==}
+  mongodb@6.20.0:
+    resolution: {integrity: sha512-Tl6MEIU3K4Rq3TSHd+sZQqRBoGlFsOgNrH5ltAcFBV62Re3Fd+FcaVf8uSEQFOJ51SDowDVttBTONMfoYWrWlQ==}
     engines: {node: '>=16.20.1'}
     peerDependencies:
       '@aws-sdk/credential-providers': ^3.188.0
@@ -3286,7 +3289,7 @@ packages:
       gcp-metadata: ^5.2.0
       kerberos: ^2.0.1
       mongodb-client-encryption: '>=6.0.0 <7'
-      snappy: ^7.2.2
+      snappy: ^7.3.2
       socks: ^2.7.1
     peerDependenciesMeta:
       '@aws-sdk/credential-providers':
@@ -3331,8 +3334,8 @@ packages:
       socks:
         optional: true
 
-  mongoose@8.9.5:
-    resolution: {integrity: sha512-SPhOrgBm0nKV3b+IIHGqpUTOmgVL5Z3OO9AwkFEmvOZznXTvplbomstCnPOGAyungtRXE5pJTgKpKcZTdjeESg==}
+  mongoose@8.20.4:
+    resolution: {integrity: sha512-o4ABeT3IEk1Z4dGt3XjHJ0x9OjyWvakC1+btPpzWqCovqyidKGdbB05/g87cdh7AuWXFQKHOxt+L/OZOBps4hw==}
     engines: {node: '>=16.20.1'}
 
   moo@0.5.2:
@@ -5549,6 +5552,11 @@ snapshots:
   '@mongodb-js/saslprep@1.2.0':
     dependencies:
       sparse-bitfield: 3.0.3
+    optional: true
+
+  '@mongodb-js/saslprep@1.4.4':
+    dependencies:
+      sparse-bitfield: 3.0.3
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -6260,7 +6268,7 @@ snapshots:
 
   bson@5.5.1: {}
 
-  bson@6.10.2: {}
+  bson@6.10.4: {}
 
   bson@6.2.0: {}
 
@@ -8581,10 +8589,10 @@ snapshots:
     optionalDependencies:
       '@mongodb-js/saslprep': 1.2.0
 
-  mongodb@6.12.0(socks@2.7.1):
+  mongodb@6.20.0(socks@2.7.1):
     dependencies:
-      '@mongodb-js/saslprep': 1.2.0
-      bson: 6.10.2
+      '@mongodb-js/saslprep': 1.4.4
+      bson: 6.10.4
       mongodb-connection-string-url: 3.0.2
     optionalDependencies:
       socks: 2.7.1
@@ -8597,11 +8605,11 @@ snapshots:
     optionalDependencies:
       socks: 2.7.1
 
-  mongoose@8.9.5(socks@2.7.1):
+  mongoose@8.20.4(socks@2.7.1):
     dependencies:
-      bson: 6.10.2
+      bson: 6.10.4
       kareem: 2.6.3
-      mongodb: 6.12.0(socks@2.7.1)
+      mongodb: 6.20.0(socks@2.7.1)
       mpath: 0.9.0
       mquery: 5.0.0
       ms: 2.1.3
