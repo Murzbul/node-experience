@@ -66,7 +66,7 @@
     "pg-promise": "^11.5.4",
     "pino": "^8.19.0",
     "pino-pretty": "^10.3.1",
-    "qs": "^6.11.2",
+    "qs": "^6.16.0",
     "reflect-metadata": "^0.2.1",
     "rxjs": "^7.8.1",
     "shelljs": "^0.9.2",
